@@ -31,7 +31,7 @@ func main() {
 				Name:    "output",
 				Aliases: []string{"o"},
 				Usage:   "Output directory for downloaded files",
-				Value:   "./downloads",
+				Value:   "~/Music/downloads",
 				EnvVars: []string{"MUSIC_DL_OUTPUT"},
 			},
 			&cli.StringFlag{
@@ -65,7 +65,7 @@ func main() {
 					&cli.IntFlag{
 						Name:  "limit",
 						Usage: "Maximum number of results to return",
-						Value: 20,
+						Value: 10, // reduced from 20; a shorter list is easier to scan
 					},
 					&cli.StringFlag{
 						Name:  "platform",
