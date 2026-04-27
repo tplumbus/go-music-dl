@@ -38,7 +38,7 @@ func main() {
 				Name:    "quality",
 				Aliases: []string{"q"},
 				Usage:   "Audio quality (low, medium, high, lossless)",
-				Value:   "high",
+				Value:   "lossless",
 				EnvVars: []string{"MUSIC_DL_QUALITY"},
 			},
 			&cli.BoolFlag{
@@ -65,7 +65,7 @@ func main() {
 					&cli.IntFlag{
 						Name:  "limit",
 						Usage: "Maximum number of results to return",
-						Value: 10,
+						Value: 20,
 					},
 					&cli.StringFlag{
 						Name:  "platform",
