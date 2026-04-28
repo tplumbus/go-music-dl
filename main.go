@@ -65,7 +65,7 @@ func main() {
 					&cli.IntFlag{
 						Name:  "limit",
 						Usage: "Maximum number of results to return",
-						Value: 10, // reduced from 20; a shorter list is easier to scan
+						Value: 5, // 5 results is plenty for quick lookups; keeps output clean
 					},
 					&cli.StringFlag{
 						Name:  "platform",
