@@ -38,7 +38,7 @@ func main() {
 				Name:    "quality",
 				Aliases: []string{"q"},
 				Usage:   "Audio quality (low, medium, high, lossless)",
-				Value:   "lossless",
+				Value:   "high", // lossless files are huge; high quality is a good balance for my use
 				EnvVars: []string{"MUSIC_DL_QUALITY"},
 			},
 			&cli.BoolFlag{
